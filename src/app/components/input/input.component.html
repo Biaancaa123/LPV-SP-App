@@ -1,0 +1,11 @@
+<ion-card *ngIf="convocatoria">
+  <ion-card-content>
+    <p id="fechaTexto">{{convocatoria.fechaTexto}}</p>
+    <ion-textarea rows="15"  [disabled]="soloLectura">
+
+    </ion-textarea>
+  </ion-card-content>
+  <ion-button expand="block" (click)="guardar()" *ngIf="!soloLectura">
+    Guardar
+  </ion-button>
+</ion-card>

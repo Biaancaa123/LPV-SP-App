@@ -1,0 +1,41 @@
+<ion-app>
+  <ion-menu menuId="main-menu" contentId="main">
+      <ion-content>
+          <div class="menu-header-bg"></div>
+          <div class="header-content">
+              <img src="https://png.pngtree.com/template/20191016/ourlarge/pngtree-women-spartan-athena-greek-goddess-from-ancient-mythology-image_319504.jpg" alt="">
+              <ion-label>
+                  <h2>Bianca Maldonado</h2>
+                  <p>Analista de Sistema</p>
+              </ion-label>
+          </div>
+          <div class="action-button">
+              <ion-button>
+                  <ion-icon slot="start" name="add"></ion-icon> Agregar
+              </ion-button>
+          </div>
+
+          <ion-list class="menu-items" lines="none">
+              <ion-item >
+                  <ion-icon name="pie-chart-outline"></ion-icon> Primero
+              </ion-item>
+              <ion-item>
+                  <ion-icon name="browsers-outline"></ion-icon> Segundo
+              </ion-item>
+              <ion-item class="active">
+                  <ion-icon name="flash"></ion-icon> Sesion
+              </ion-item>
+              <ion-item>
+                  <ion-icon name="chatbubble-ellipses-outline"></ion-icon> Mensajes
+              </ion-item>
+              <ion-item>
+                  <ion-icon name="heart-outline"></ion-icon> Iniciar
+              </ion-item>
+              <ion-item>
+                  <ion-icon name="exit-outline"></ion-icon> Cerrar
+              </ion-item>
+          </ion-list>
+      </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>

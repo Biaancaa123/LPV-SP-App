@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>
+      Convocatoria
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+        <ion-card-title>Crear convocatoria</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+        <form [formGroup]="formularioConvocatoria">
+            <ion-item>
+                <ion-label position="floating">Nombre y apellido</ion-label>
+                <ion-input formControlName="nombre"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Cantidad de donantes</ion-label>
+                <ion-input formControlName="cantidadonantes" ></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Grupo sanguineo</ion-label>
+              <ion-input formControlName="gruposanguineo"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Comentario</ion-label>
+            <ion-input formControlName="comentario"></ion-input>
+          </ion-item>
+        </form>
+        <br>
+        <ion-button (click)="guardar()">
+            Guardar
+        </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
